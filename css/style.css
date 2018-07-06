@@ -1,0 +1,207 @@
+/* ============================================ General CSS ============================================ */
+
+body {
+  background-color: #D7D6A5;
+  padding: 80px;
+}
+
+
+
+
+/* ============================================ General CSS ============================================ */
+
+/* ============================================ Header CSS ============================================ */
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  background: #074358;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 15px;
+
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255,0.5);
+  border-radius: 10px;
+  border: 1px;
+  color: #fff;
+  text-indent: 10px;
+  padding:0 100px 0 0;
+
+  /*temp*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+/*temp*/
+header input::-webkit-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+header input:-moz-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+header input::-moz-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+header input:-ms-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+header button {
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #A55C55;
+  border: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+#add-sign {
+  font-size: 25px;
+}
+
+/* ============================================ Header CSS ============================================ */
+
+/* ============================================ TODo CSS ============================================ */
+
+#tasks-div {
+  margin: 10px 0 0 0;
+}
+
+ul.todo {
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+}
+
+.task-item {
+  margin-top: 20px;
+  background-color: white;
+
+}
+
+ul.todo li {
+  width: 100%;
+  min-height: 40px;
+  float: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #074358;
+  background: white;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  padding: 9px 100px 10px 10px;
+}
+
+/*temp*/
+/*ul.todo li:last-of-type {
+  margin: 0;
+}
+
+ul.todo li:first-of-type {
+  margin: 10px;
+}*/
+
+
+ul.todo li .buttons-div {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  color: 074358;
+}
+
+ul.todo li .buttons-div i {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: none;
+  position: relative;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/*temp*/
+ul.todo li .buttons i:last-of-type:before {
+  content: '';
+  width: 1px;
+  height: 30px;
+  background: black;
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.manipulate-button-complete:hover,
+.manipulate-button-remove:hover {
+  color: red;
+}
+
+ul.todo#completed-tasks li {
+  text-decoration: line-through;
+}
+
+ul.todo#completed-tasks {
+  position: relative;
+  padding-top: 60px;
+}
+
+/*temp*/
+ul.todo#completed-tasks::before {
+  width: 50px;
+  height: 2px;
+  background: #A55C55;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 50%;
+  text-align: center;
+}
+
+ul.todo#not-completed-tasks:empty::after {
+  content: "You have nothing to do!";
+}
+
+ul.todo#completed-tasks:empty::after {
+  content: "You haven't completed any tasks yet!";
+  align-items: center;
+}
+
+ul.todo#not-completed-tasks:after,
+ul.todo#completed-tasks:after {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color: #074358;
+}
+/* ============================================ TODo CSS ============================================ */

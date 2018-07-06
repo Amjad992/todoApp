@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+    <head>
+
+        <title>My TODO List App</title>
+
+        <meta charset="utf-8">
+
+        <meta name="description" content="Amjad Majed's personal webstie and portfolio">
+
+        <meta name="keywords" content="amjad, majed, portfolio, personal, software engineer, software, application, app, android,
+                                       programing, development">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Raleway:400,700" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109817459-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-109817459-1');
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <input type="text" id="input-field" placeholder="Enter the task..">
+                <button id="add-button" type="button"> <i id="add-sign" class="fa fa-plus" aria-hidden="true"></i></button>
+
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+        <!-- Section -->
+        <section id="todo-list">
+
+          <div class="container">
+            <div id="tasks-div" class="row">
+
+              <div class="col-12">
+
+                <!-- Uncompleted tasks -->
+                <ul class="todo" id="not-completed-tasks"></ul>
+
+                <!-- Completed tasks -->
+                <ul class="todo" id="completed-tasks"></ul>
+
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+
+        <!-- Scripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- My Script -->
+        <script src="js/custom.js"></script>
+
+
+
+
+    </body>
+
+
+</html>
